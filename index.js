@@ -22,7 +22,7 @@ const generatePage = (name, github) => {
 };
 
 
-fs.writeFile('./output/readme.md', generatePage(myName, github), err => {
+fs.writeFile('README.md', generatePage(myName, github), err => {
     if (err) throw err;
   
     console.log('Readme complete! Check out readme.md to see the output!');
