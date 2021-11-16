@@ -1,3 +1,4 @@
+const fs = require('fs');
 
 const myName = 'Sam Davenport';
 const github = 'steadysamwise4';
@@ -21,4 +22,8 @@ const generatePage = (name, github) => {
 };
 
 
-console.log(generatePage(myName, github));
+fs.writeFile('./output/readme.md', generatePage(myName, github), err => {
+    if (err) throw err;
+  
+    console.log('Readme complete! Check out readme.md to see the output!');
+  });
