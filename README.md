@@ -1,5 +1,6 @@
 
-# sfasfafasdfa
+# EZ-readme-creator   ![license badge](https://img.shields.io/badge/<License>-<APACHE>-<green>)
+<sub>_*Built With*_</sub>         
 <sub>JavaScript,HTML,ES6,Node</sub>
 
 ## Table of Contents
@@ -12,20 +13,20 @@
 * [Questions](#questions)
 
 ### Description <a name="description"></a>
-sdf sfasdads asfsadf fasfa afaf ;ljlk; ;llkj ;j;kj a adfafad afaaaf asfasa afa fasf afafadsfafff afaff fafas faf faff jjlk; fa falfkj;j adfa ; ;j afdsj a;ja;fj.
+This is a great project. It creates readme.md files out of thin air. Just answer some questions, and Boom!
 
 ### Installation <a name="installation"></a>
-aa afasdf af safdaf fa fafa afdf af fas fafs fffasf f.
+asdfaf afaf afafa fafa fff afafdf afadaf faf affafaf fafff ffaf afaf f.
 
 ### Usage <a name="usage"></a>
-afafdf asfaf sfa ffaf sdf fasfsa fasf af.
-![Don't mess with Magneto!](./utils/images/Magneto.jpg)
+a fafa ffaf f f af af faf f afa f dsfafsfafaf fafafa fa fafaf afa faffaf a faff.
+![Magneto](./utils/images/Magneto.jpg)
 
 ### License <a name="license"></a>
-MIT
+APACHE
 
 ### Contributing <a name="contributing"></a>
-Chris S
+Chris S. Module 9 of the boot camp.
 
 ### Tests <a name="tests"></a>
 N/A at this time
@@ -33,13 +34,5 @@ N/A at this time
 ### Questions <a name="questions"></a>
 Contact: Sam Davenport </br>
 https://github.com/steadysamwise4 </br>
-sasdfsdafa
+samueldavenport@att.net
     
-With this node.js application, you can easily generate
-an excellent readme.md by answering a few questions in
-the command line.
-    
-* Introduction
-* Instructions
-* Links
-* Demonstration Video

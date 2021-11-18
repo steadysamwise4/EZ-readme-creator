@@ -1,6 +1,12 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+const renderLicense = licenseText => {
+    if (licenseText === 'None') {
+        return '';
+    }
+
+    return `![license badge](https://img.shields.io/badge/<License>-<${licenseText}>-<green>)`
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -15,17 +21,18 @@ module.exports = templateData => {
 const { name, username, email, title, languages, description, instructions, usage, altText, screenShot, license, contribute } = templateData;
 
 return`
-# ${title}
+# ${title}   ${renderLicense(license)}
+<sub>_***Built With***_</sub>  </br>       
 <sub>${languages}</sub>
 
 ## Table of Contents
-*[Description](#description)
-*[Installation](#installation)
-*[Usage](#usage)
-*[License](#license)
-*[Contributing](#contributing)
-*[Tests](#tests)
-*[Questions](#questions)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ### Description <a name="description"></a>
 ${description}
@@ -47,18 +54,11 @@ ${contribute}
 N/A at this time
 
 ### Questions <a name="questions"></a>
-Contact: ${name}
-https://github.com/${username}
+Contact: ${name} </br>
+https://github.com/${username} </br>
 ${email}
     
-With this node.js application, you can easily generate
-an excellent readme.md by answering a few questions in
-the command line.
-    
-* Introduction
-* Instructions
-* Links
-* Demonstration Video`;
+`;
 
     
 };
