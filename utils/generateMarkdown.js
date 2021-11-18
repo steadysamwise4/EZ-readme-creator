@@ -11,11 +11,45 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-const generateMarkdown = (name, github) => {
-return`
-# ${name}
+module.exports = templateData => {
+const { name, username, email, title, languages, description, instructions, usage, altText, screenShot, license, contribute } = templateData;
 
-## ${github}
+return`
+# ${title}
+<sub>${languages}</sub>
+
+## Table of Contents
+*[Description](#description)
+*[Installation](#installation)
+*[Usage](#usage)
+*[License](#license)
+*[Contributing](#contributing)
+*[Tests](#tests)
+*[Questions](#questions)
+
+### Description <a name="description"></a>
+${description}
+
+### Installation <a name="installation"></a>
+${instructions}
+
+### Usage <a name="usage"></a>
+${usage}
+![${altText}](${screenShot})
+
+### License <a name="license"></a>
+${license}
+
+### Contributing <a name="contributing"></a>
+${contribute}
+
+### Tests <a name="tests"></a>
+N/A at this time
+
+### Questions <a name="questions"></a>
+Contact: ${name}
+https://github.com/${username}
+${email}
     
 With this node.js application, you can easily generate
 an excellent readme.md by answering a few questions in
@@ -29,4 +63,3 @@ the command line.
     
 };
 
-module.exports = generateMarkdown;

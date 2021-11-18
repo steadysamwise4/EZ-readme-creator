@@ -20,7 +20,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'name',
+            name: 'title',
             message: 'What is the title of your project? (Required)'
         },
         {
@@ -48,6 +48,11 @@ const promptUser = () => {
             type: 'input',
             name: 'altText',
             message: 'Please enter alt text for the screen shot:'
+        },
+        {
+            type: 'input',
+            name: 'screenShot',
+            message: 'Please enter a file path for a screen shot:'
         },
         {
             type: 'list',
