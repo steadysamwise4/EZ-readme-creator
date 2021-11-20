@@ -1,22 +1,29 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+
 const renderLicense = licenseText => {
     if (licenseText === 'None') {
         return '';
     }
-
-    return `![license badge](https://img.shields.io/badge/<License>-<${licenseText}>-<green>)`
+    return `![license badge](https://img.shields.io/badge/License-${licenseText}-<green>)`
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+const renderLicenseLink = licenseText => {
+    if (licenseText === 'None') {
+        return `${licenseText}`;
+    }
+    if (licenseText === 'CC') {
+        return `[${licenseText}](https://creativecommons.org/licenses/by/4.0/)`;
+    }
+    if (licenseText === 'BSD') {
+        return `[${licenseText}](https://opensource.org/licenses/BSD-3-Clause)`;
+    }
+    if (licenseText === 'MIT') {
+        return `[${licenseText}](https://opensource.org/licenses/MIT)`;
+    }
+    if (licenseText === 'APACHE') {
+        return `[${licenseText}](https://opensource.org/licenses/Apache-2.0)`;
+    }
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
 module.exports = templateData => {
 const { name, username, email, title, languages, description, instructions, usage, altText, screenShot, license, contribute } = templateData;
 
@@ -34,32 +41,30 @@ return`
 * [Tests](#tests)
 * [Questions](#questions)
 
-### Description <a name="description"></a>
+## Description <a name="description"></a>
 ${description}
 
-### Installation <a name="installation"></a>
+## Installation <a name="installation"></a>
 ${instructions}
 
-### Usage <a name="usage"></a>
+## Usage <a name="usage"></a>
 ${usage}
 ![${altText}](${screenShot})
 
-### License <a name="license"></a>
-${license}
+## License <a name="license"></a>
+${renderLicenseLink(license)}
 
-### Contributing <a name="contributing"></a>
-${contribute}
+## Contributing <a name="contributing"></a>
+[Contributing Guidelines](${contribute})
 
-### Tests <a name="tests"></a>
+## Tests <a name="tests"></a>
 N/A at this time
 
-### Questions <a name="questions"></a>
+## Questions <a name="questions"></a>
 Contact: ${name} </br>
 https://github.com/${username} </br>
 ${email}
     
-`;
-
-    
+`;   
 };
 

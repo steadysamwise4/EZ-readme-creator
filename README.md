@@ -1,6 +1,6 @@
 
-# EZ-readme-creator   ![license badge](https://img.shields.io/badge/<License>-<APACHE>-<green>)
-<sub>_*Built With*_</sub>         
+# EZ-readme-creator   ![license badge](https://img.shields.io/badge/License-MIT-<green>)
+<sub>_***Built With***_</sub>  </br>       
 <sub>JavaScript,HTML,ES6,Node</sub>
 
 ## Table of Contents
@@ -12,26 +12,26 @@
 * [Tests](#tests)
 * [Questions](#questions)
 
-### Description <a name="description"></a>
-This is a great project. It creates readme.md files out of thin air. Just answer some questions, and Boom!
+## Description <a name="description"></a>
+With this application, a user can save their time by easily creating a professional readme.md file in by answering some questions in the command line. The process only takes a few minutes.
 
-### Installation <a name="installation"></a>
-asdfaf afaf afafa fafa fff afafdf afadaf faf affafaf fafff ffaf afaf f.
+## Installation <a name="installation"></a>
+clone the repo to your local computer. ensure that you have node downloaded to your system. run 'npm install inquirer' in the command line.
 
-### Usage <a name="usage"></a>
-a fafa ffaf f f af af faf f afa f dsfafsfafaf fafafa fa fafaf afa faffaf a faff.
-![Magneto](./utils/images/Magneto.jpg)
+## Usage <a name="usage"></a>
+run 'node index' in the command line and answer the prompts. copy the generated readme.md file to your project, and view the results.
+![Example image](./utils/demo.png)
 
-### License <a name="license"></a>
-APACHE
+## License <a name="license"></a>
+[MIT](https://opensource.org/licenses/MIT)
 
-### Contributing <a name="contributing"></a>
-Chris S. Module 9 of the boot camp.
+## Contributing <a name="contributing"></a>
+[Contributing Guidelines](Chris Sinaslath, my TA for an excellent walkthrough of the process in office hours)
 
-### Tests <a name="tests"></a>
+## Tests <a name="tests"></a>
 N/A at this time
 
-### Questions <a name="questions"></a>
+## Questions <a name="questions"></a>
 Contact: Sam Davenport </br>
 https://github.com/steadysamwise4 </br>
 samueldavenport@att.net
