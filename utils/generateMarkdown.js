@@ -25,23 +25,23 @@ const renderLicenseLink = licenseText => {
 }
 
 module.exports = templateData => {
-const { name, username, email, title, languages, description, instructions, usage, altText, screenShot, license, contribute } = templateData;
+const { name, username, email, title, languages, description, instructions, usage, altText, screenShot, license, reference, contribution } = templateData;
 
 return`
 # ${title}   ${renderLicense(license)}
-<sub>_***Built With***_</sub>  </br>       
-<sub>${languages}</sub>
 
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
+* [References](#reference)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
 ## Description <a name="description"></a>
+<sub>_***Built With:***_</sub> <sub>${languages}</sub>
 ${description}
 
 ## Installation <a name="installation"></a>
@@ -54,8 +54,11 @@ ${usage}
 ## License <a name="license"></a>
 ${renderLicenseLink(license)}
 
+## References <a name="reference"></a>
+${reference}
+
 ## Contributing <a name="contributing"></a>
-[Contributing Guidelines](${contribute})
+[Contributing Guidelines](${contribution})
 
 ## Tests <a name="tests"></a>
 N/A at this time

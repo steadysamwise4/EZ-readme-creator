@@ -62,8 +62,20 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'contribute',
-            message: 'Please list any references here:'
+            name: 'reference',
+            message: 'Please list any references here:',
+            default: 'None'
+        },
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'Enter file path for contribution instructions'
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Enter instructions for testing your application here:',
+            default: 'N/A at this time'
         },
         
     ]);
