@@ -20,8 +20,8 @@ Clone the repo to your local computer. Ensure that you have node.js downloaded t
 
 ## Usage <a name="usage"></a>
 Run "node index" in the command line and answer the prompts. Copy the generated readme.md file to your project, and view the results. </br>
-![Demo video](https://watch.screencastify.com/v/egXquayWYlIovYh0dfJp) </br>
-![Demo screenshot](./utils/images/demo.png)
+<img src="./utils/images/demo.png" width="150 px"> </br>
+[Demo Video](./output/demo-video.webm) 
 
 ## License <a name="license"></a>
 [MIT](./docs/mit-license.txt)
